@@ -1,0 +1,20 @@
+<form action="/mensaje" method="post">
+  <label for="txtMensaje">Mensaje</label>
+  <input type="mensaje" id="txtMensaje" name="txtMensaje"
+    value="{{txtMensaje}}" placeholder="Ingrese lo que desee."
+    />
+    <br />
+    <input type="submit" value="Aceptar" id="btnSubmit"
+      name="btnSubmit"/>
+</form>
+<div>
+  <ul>
+    {{#each msg}}
+      <li>
+        {{this}}
+        Prueba
+      </li>
+      {{/each}}
+  </ul>
+
+</div>
